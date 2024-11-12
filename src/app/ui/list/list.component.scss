@@ -1,0 +1,21 @@
+:host{
+    display: block;
+    width: 50vw;
+    height: 45dvh;
+    border-right: solid 2px var(--green);
+}
+h1{
+    color: var(--green);
+    font-size: 56px;
+    padding: 2dvw 0 0 3dvw;
+}
+ul{
+    color: var(--green);
+    font-size: 32px;
+    list-style: none;
+    padding: 2dvh 0 0 3dvw;
+    opacity: 0.8;
+}
+li{
+    padding: 1dvh 0 0 0;
+}

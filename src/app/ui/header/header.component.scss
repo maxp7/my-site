@@ -1,0 +1,19 @@
+
+h1{
+    color: var(--green);
+    font-size: 72px;
+    padding: 2dvw 0 0 3dvw;
+}
+p{
+    color: var(--green);
+    font-size: 32px;
+    width: 60ch;
+    padding: 2dvw 0 0 3dvw;
+    opacity: 0.8;
+}
+:host {
+    width: 100vw;
+    height: 55dvh;
+    display: block;
+    border-bottom: solid 2px var(--green);
+  }
