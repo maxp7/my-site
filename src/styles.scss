@@ -1,8 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 :root{
-    --bg-color:#090909;
-    --green:#008F11;
+    --bg-color:#1e2635;
+    --grey:	#a1a8b9;
+    --green: #38b86a;    ;
+    --blue: #6cdde4;
+    --purple:#b383e2;
 }
+
+
+  body {
+    font-family: 'JetBrains Mono', sans-serif;
+    font-weight:100;
+  }
 *{
     box-sizing: border-box;
     margin: 0;

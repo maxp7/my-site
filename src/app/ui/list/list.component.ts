@@ -12,5 +12,6 @@ import { CommonModule } from '@angular/common';
 export class ListComponent {
     @Input() title: string = '';
     @Input() items: string[] = [];
+    @Input() color: string = 'var(--purple)';
 
 }
