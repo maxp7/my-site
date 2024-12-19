@@ -1,4 +1,4 @@
-<ul>
+<ul [ngStyle]="{'color': color}">
   <li *ngFor="let item of items">
     <a href="javascript:void(0)" (click)="handleLinkClick(item)">
       {{ item.text }}
