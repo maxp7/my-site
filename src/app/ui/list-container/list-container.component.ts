@@ -10,6 +10,6 @@ import { DividerComponent } from '../divider/divider.component';
   styleUrl: './list-container.component.scss'
 })
 export class ListContainerComponent {
-    contactsItems = ['get email', 'get cv', 'get telegram', 'get instagram'];
-    projectsItems = ['vishnevska.com', 'indes', 'fragmente', 'tangible music interfaces'];
+    contactsItems = ['get email', 'get cv', 'github', 'instagram'];
+    projectsItems = ['vishnevska.com', 'indes', 'fragmente', 'tactile music interfaces'];
 }

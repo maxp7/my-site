@@ -1,49 +1,47 @@
 
 h1{
     color: var(--grey);
-    font-size: 18px;
-    width: 30%;
-    margin: 0 auto;
+    font-size: 16px;
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+    margin: 1dvh auto 5dvh;
+    font-weight: 200;
 }
 p{
     color: var(--green);
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 200;
+    max-width: 90dvw;
     width: 65ch;
     padding: 2dvh 0 2dvh 3dvw;
+    margin: 2dvh 0 ;
 }
 
-.timeline-container {
-    margin: 0 1vw;
-    display: flex;
-    align-items: center;
-    width: auto;
-  }
+  
+#bio-text {
+  position: relative;
+  display: inline-block;
+  font-family: monospace;
+}
 
-  .icon {
-    background-color: #2060d0; /* Blue color */
-    color: white;
-    width: auto;
-    height: 15px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 5px;
-  }
+#bio-text:after {
+  content: '|';
+  position: relative;
+  top: 0;
+  left: -2px;
+  font-size: 24px;
+  color: var(--green);
+  pointer-events: none;  /* Prevent interaction with the cursor */
+}
+#bio-text.cursor-blink:after {
+  animation: blink 1s step-end infinite;
+  opacity: 1;  /* Make the cursor visible when typing is complete */
+}
 
-  .line {
-    flex-grow: 1;
-    height: 1px;
-    background-color: #666; /* Line color */
+@keyframes blink {
+  50% {
+    opacity: 0;
   }
-
-  .label {
-    color: #ccc;
-    background-color: #444;
-    font-size: 12px;
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-left: 5px;
-  }
-
+}
 

@@ -11,7 +11,7 @@
     opacity: 0.8;
     color: var(--bg-color);
     width: auto;
-    height: 24px;
+    height: 28px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -23,6 +23,7 @@
   .line {
     flex-grow: 1;
     height: 1px;
+    margin: 0 1px;
     background-color: var(--grey); /* Line color */
   }
 

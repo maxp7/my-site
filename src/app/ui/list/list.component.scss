@@ -1,17 +1,17 @@
 :host {
     display: flex; /* Keep this as per your requirement */
+    margin: 2dvh 0;
   }
 
   
   ul {
     display: grid; 
     grid-template-columns: repeat(2, 30dvw); 
-    grid-template-rows: repeat(2, 1px); 
-    gap: 5dvh;
-    font-size: 18px;
+    grid-template-rows: repeat(2, auto); 
+    gap: 4dvh;
+    font-size: 24px;
     list-style: none;
-    padding: 2dvh 0 0 3dvw;
-    margin-bottom: 7vh;
+    padding: 2dvh 0 2vh 3dvw;
   }
   
   li {
