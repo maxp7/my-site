@@ -1,3 +1,7 @@
-<ul [style.--list-color]="color">
-  <li *ngFor="let item of items">{{ item }}</li>
+<ul>
+  <li *ngFor="let item of items">
+    <a href="javascript:void(0)" (click)="handleLinkClick(item)">
+      {{ item.text }}
+    </a>
+  </li>
 </ul>

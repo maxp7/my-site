@@ -1,5 +1,8 @@
 <app-divider title="~/projects" [color]="'var(--blue)'"></app-divider>
-<app-list title="/projects" [items]="projectsItems" [color]="'var(--blue)'"></app-list>
+<app-list title="/projects" [items]="projectsItems" [color]="'var(--blue)'" (linkClicked)="openProjectInfo($event)"></app-list>
 
 <app-divider title="~/contacts" [color]="'var(--purple)'"></app-divider>
-<app-list title="/contacts" [items]="contactsItems" [color]="'var(--purple)'"></app-list>
+<app-list title="/contacts" [items]="contactsItems" [color]="'var(--purple)'" (linkClicked)="openProjectInfo($event)"></app-list>
+
+<!-- The modal will only appear if the clicked item is a project -->
+<app-project-info *ngIf="showInfo" [project]="projectData" (close)="closeInfo()"></app-project-info>

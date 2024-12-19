@@ -1,0 +1,16 @@
+<div class="modal-backdrop" (click)="onBackdropClick($event)"></div> <!-- This is the backdrop -->
+<div class="info-container">
+  <div class="info-header">
+    <span class="close-btn" (click)="closeModal()"></span>
+    <span class="minimize-btn"></span>
+    <span class="fullscreen-btn"></span>
+  </div>
+  <div class="info-body">
+    <h1>{{ project.text }}</h1>
+    <p>{{project.info}}</p>
+    <div class="link-container">
+      <a href="{{ project.documentation }}" class="info-link" target="_blank">documentation</a>
+      <a href="{{ project.github }}" class="info-link" target="_blank">github</a>
+    </div>
+  </div>
+</div>

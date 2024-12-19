@@ -1,6 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 
 @Component({
   selector: 'app-list',
@@ -10,8 +9,14 @@ import { CommonModule } from '@angular/common';
   styleUrl: './list.component.scss'
 })
 export class ListComponent {
-    @Input() title: string = '';
-    @Input() items: string[] = [];
-    @Input() color: string = 'var(--purple)';
+  @Input() title: string = '';
+  @Input() color: string = 'var(--purple)';
+  @Input() items: { text: string; link: string, documentation?: string, github?: string }[] = [];
 
+  @Output() linkClicked = new EventEmitter<any>();  // Emit the clicked item data
+
+  // Method to handle link clicks and pass item data to the parent
+  handleLinkClick(item: any) {
+    this.linkClicked.emit(item);  // Emit the clicked item to the parent
+  }
 }
