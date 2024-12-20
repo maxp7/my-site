@@ -20,8 +20,15 @@ import { CommonModule } from '@angular/common';
   
 
   projectsItems = [
-    { text: 'vishnevska.com', link: '', title: '~/vishnevska.com', documentation: 'https://vishnevska.com', github: 'https://github.com/maxp7/Anastasiia-portfolio', info: '> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus in unde eius, quas soluta ex. Neque rerum harum hic, fuga consequuntur repellat reiciendis cumque nam a? Explicabo illo velit quis.' },
-    { text: 'indes', link: '',title: '~/indes', documentation: '/indes.pdf', github: 'https://github.com/maxp7/indes', info: `
+    {
+      text: 'vishnevska.com',
+      link: 'https://vishnevska.com',
+      title: '~/vishnevska.com',
+      documentation: 'https://vishnevska.com',
+      github: 'https://github.com/maxp7/Anastasiia-portfolio',
+      info: '> This website is all about the work of Vishnevska, an artist and filmmaker who`s been looking at where technology, art and sociology meet. <br><br> > It\'s got short movies and sensory AI explorations, and shows off some pretty innovative projects that mix human experience and digital realms. So, why not dive into a world where creativity and technology collide?'
+    },
+        { text: 'indes', link: '',title: '~/indes', documentation: '/indes.pdf', github: 'https://github.com/maxp7/indes', info: `
       > Post-human "<i>don't get angry</i>" is a post-humanist reinterpretation of the popular classic <b>Mensch ärgere dich nicht</b>, 
       which deliberately breaks all the rules of (gaming) art. <br><br>
       > Constant change is at the centre of this interactive and destructive game: it reflects the unsteady, dynamic conditions of our world 
