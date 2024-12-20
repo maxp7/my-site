@@ -11,7 +11,8 @@ import { CommonModule } from '@angular/common';
 export class ListComponent {
   @Input() title: string = '';
   @Input() color: string = '';
-  @Input() items: { text: string; link: string, documentation?: string, github?: string }[] = [];
+  @Input() items: { text: string; link?: string; title?: string; documentation?: string; github?: string; info?: string }[] = [];
+
 
   @Output() linkClicked = new EventEmitter<any>();  // Emit the clicked item data
 

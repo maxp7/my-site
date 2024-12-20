@@ -1,15 +1,15 @@
-<div class="modal-backdrop" (click)="onBackdropClick($event)"></div> <!-- This is the backdrop -->
-<div class="info-container">
+<div class="modal-backdrop" (click)="onBackdropClick($event)"></div>
+<div class="info-container" [class.expanded]="isExpanded">
   <div class="info-header">
-    <span class="close-btn" (click)="closeModal()"></span>
-    <span class="minimize-btn" (click)="closeModal()"></span>
-    <span class="fullscreen-btn"></span>
+    <span class="btn close-btn" (click)="closeModal()"></span>
+    <span class="btn min-btn" (click)="closeModal()"></span>
+    <span class="btn max-btn" (click)="toggleMaximize()"></span>
   </div>
   <div class="info-body">
-    <h1>{{ project.text }}</h1>
-    <p>{{project.info}}</p>
+    <h1>{{ project.title }}</h1>
+    <div [innerHTML]="project.info"></div>
     <div class="link-container">
-      <a href="{{ project.documentation }}" class="info-link" target="_blank">documentation</a>
+      <a href="{{ project.documentation }}" class="info-link" target="_blank">explore</a>
       <a href="{{ project.github }}" class="info-link" target="_blank">github</a>
     </div>
   </div>

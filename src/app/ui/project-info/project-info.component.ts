@@ -8,18 +8,23 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./project-info.component.scss']
 })
 export class ProjectInfoComponent {
-  @Input() project: any = {};  // Receive the project data
-  @Output() close = new EventEmitter<void>();  // Emit close event to parent
+  @Input() project: any = {}; // Receive the project data
+  @Output() close = new EventEmitter<void>(); // Emit close event to parent
 
+  isExpanded: boolean = false; // Tracks if the info-container is maximized
 
   onBackdropClick(event: MouseEvent) {
     const modalElement = document.querySelector('.info-container');
     if (modalElement && !modalElement.contains(event.target as Node)) {
-      this.closeModal();  
+      this.closeModal();
     }
   }
 
   closeModal() {
-    this.close.emit();  
+    this.close.emit();
+  }
+
+  toggleMaximize() {
+    this.isExpanded = !this.isExpanded;
   }
 }

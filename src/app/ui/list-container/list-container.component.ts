@@ -12,17 +12,26 @@ import { CommonModule } from '@angular/common';
   styleUrl: './list-container.component.scss'
 })export class ListContainerComponent {
   contactsItems = [
-    { text: 'get email', link: 'mailto:maksym.pidluzhnyi@gmail.com' },
-    { text: 'get cv', link: '/cv.pdf' },
-    { text: 'github', link: 'https://github.com/maxp7' },
-    { text: 'instagram', link: 'https://instagram.com/podlughniy' }
+    { text: 'get email', link: 'mailto:maksym.pidluzhnyi@gmail.com', title: 'Email Maksym' },
+    { text: 'get cv', link: '/cv.pdf', title: 'Download CV' },
+    { text: 'github', link: 'https://github.com/maxp7', title: 'GitHub Profile' },
+    { text: 'instagram', link: 'https://instagram.com/podlughniy', title: 'Instagram Profile' }
   ];
+  
 
   projectsItems = [
-    { text: 'vishnevska.com', link: 'https://vishnevska.com', documentation: '1', github: '1' },
-    { text: 'indes', link: '/indes.pdf', documentation: '1', github: '1' },
-    { text: 'fragmente', link: 'https://fragmente.example.com', documentation: '1', github: '1' },
-    { text: 'tactile music interfaces', link: 'https://ars.electronica.art/who-owns-the-truth/en/tactile-music-interfaces/', documentation: '1', github: '1' }
+    { text: 'vishnevska.com', link: '', title: '~/vishnevska.com', documentation: 'https://vishnevska.com', github: 'https://github.com/maxp7/Anastasiia-portfolio', info: '> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus in unde eius, quas soluta ex. Neque rerum harum hic, fuga consequuntur repellat reiciendis cumque nam a? Explicabo illo velit quis.' },
+    { text: 'indes', link: '',title: '~/indes', documentation: '/indes.pdf', github: 'https://github.com/maxp7/indes', info: `
+      > Post-human "<i>don't get angry</i>" is a post-humanist reinterpretation of the popular classic <b>Mensch ärgere dich nicht</b>, 
+      which deliberately breaks all the rules of (gaming) art. <br><br>
+      > Constant change is at the centre of this interactive and destructive game: it reflects the unsteady, dynamic conditions of our world 
+      and forces players to adapt flexibly to changing game rules and objectives. <br><br>
+      > At the same time, it promotes a deeper understanding of relational and situational ways of thinking and acting and thus offers an insight 
+      into possible post-human working methods.
+    `
+  },
+    { text: 'fragmente', link: '',title: '~/fragmente', documentation: '/fragmente.pdf', github: 'https://github.com/maxp7/Fragmente', info: '> <b>"Fragmente"</b> is a narrative installation in which visitors are invited to take a seat in a small living room.</br></br>> On a side table, there is a photo album which takes visitors on a journey into the past. </br> </br>> As soon as the first page of the album is turned, the album tells a fragmentary story about memories, identity and family from multiple perspectives with the help of photographs and audio contributions.' },
+    { text: 'tactile music interfaces',link: '', title: '~/tactileMusicInterfaces', documentation: 'https://ars.electronica.art/who-owns-the-truth/en/tactile-music-interfaces/', github: 'https://github.com/maxp7/Tactile-Music-Interfaces', info: '> The interactive application was developed with the aim of providing inclusive access for blind and visually impaired people and was created in cooperation with the <i>Museum of Musical Instruments</i> (MiM) in Berlin. <br><br> > The three musical interfaces are each inspired by historical musical instruments in their functionality and appearance. These are the <b>hurdy-gurdy</b>, the <b>clavichord</b>, and the <b>shelf</b>. <br><br> > By touching or pressing these tactile interfaces, the samples of the respective exhibits produce sound and encourage visitors to make music' }
   ];
 
   showInfo: boolean = false;

@@ -8,10 +8,10 @@
     display: grid; 
     grid-template-columns: repeat(2, 30dvw); 
     grid-template-rows: repeat(2, auto); 
-    gap: 4dvh;
+    gap: 3dvh;
     font-size: 24px;
     list-style: none;
-    padding: 2dvh 0 2vh 3dvw;
+    padding: 2dvh 0 2dvh 3dvw;
   }
   
   li {
