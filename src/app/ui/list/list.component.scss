@@ -33,15 +33,14 @@
   }
   @media only screen and (max-width: 800px) {
     :host {
-      display: flex; 
-      margin: 1dvw;
+      margin: 0;
     }
   
     ul{
       display: block;
       font-size: 20px;
       padding: 0;
-      margin: 2dvh;
+      margin: 0 2dvh 1vh;
     }
     li{
       margin: 1vh 0;
