@@ -32,6 +32,7 @@ div{
   color: #d4d4d4;
   border-radius: 8px;
   overflow: hidden;
+  max-width: 90vw ;
   width: 75vw;
   height: 90vh;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
@@ -176,3 +177,19 @@ div{
 .info-link:hover {
   transform: scale(1.05);
 }
+
+@media only screen and (max-width: 800px) {
+  h1{
+   font-size: 18px;
+  }
+  div{
+    font-size: 16px;
+  }
+  .info-container{
+    width: 90vw;
+  }
+  .info-link {
+    margin: 0 2vw;
+    font-size: 20px;
+  }
+ }

@@ -1,5 +1,5 @@
 :host {
-    display: flex; /* Keep this as per your requirement */
+    display: flex; 
     margin: 2dvh 0;
   }
 
@@ -8,7 +8,7 @@
     display: grid; 
     grid-template-columns: repeat(2, 30dvw); 
     grid-template-rows: repeat(2, auto); 
-    gap: 3dvh;
+    gap: 30px;
     font-size: 24px;
     list-style: none;
     padding: 2dvh 0 2dvh 3dvw;
@@ -31,4 +31,19 @@
       transform: scale(1.05);
     }
   }
+  @media only screen and (max-width: 800px) {
+    :host {
+      display: flex; 
+      margin: 1dvw;
+    }
   
+    ul{
+      display: block;
+      font-size: 20px;
+      padding: 0;
+      margin: 2dvh;
+    }
+    li{
+      margin: 1vh 0;
+    }
+   }
